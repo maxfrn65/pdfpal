@@ -20,7 +20,7 @@ class Subscription
     private ?string $description = null;
 
     #[ORM\Column]
-    private ?int $pdf_limit = null;
+    private ?int $pdfLimit = null;
 
     #[ORM\Column]
     private ?float $price = null;
@@ -57,14 +57,14 @@ class Subscription
         return $this;
     }
 
-    public function getPdfLimit(): ?int
+    public function getPdfLimit(): ?string
     {
-        return $this->pdf_limit;
+        return $this->pdfLimit;
     }
 
-    public function setPdfLimit(int $pdf_limit): static
+    public function setPdfLimit(string $pdfLimit): static
     {
-        $this->pdf_limit = $pdf_limit;
+        $this->pdfLimit = $pdfLimit;
 
         return $this;
     }

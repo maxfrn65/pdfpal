@@ -16,11 +16,11 @@ class Pdf
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column]
-    private ?\DateTimeImmutable $created_at = null;
-
     #[ORM\ManyToOne]
-    private ?User $user_id = null;
+    private ?User $user = null;
+
+    #[ORM\Column]
+    private ?\DateTimeImmutable $createdAt = null;
 
     public function getId(): ?int
     {
@@ -39,26 +39,26 @@ class Pdf
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeImmutable
+    public function getUser(): ?User
     {
-        return $this->created_at;
+        return $this->user;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $created_at): static
+    public function setUser(?User $user): static
     {
-        $this->created_at = $created_at;
+        $this->user = $user;
 
         return $this;
     }
 
-    public function getUserId(): ?User
+    public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->user_id;
+        return $this->createdAt;
     }
 
-    public function setUserId(?User $user_id): static
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
-        $this->user_id = $user_id;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
