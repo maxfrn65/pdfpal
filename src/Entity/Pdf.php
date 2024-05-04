@@ -20,7 +20,7 @@ class Pdf
     private ?User $user = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $createdAt = null;
+    private ?string $createdAt = null;
 
     public function getId(): ?int
     {
@@ -51,12 +51,12 @@ class Pdf
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeImmutable
+    public function getCreatedAt(): ?string
     {
         return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $createdAt): static
+    public function setCreatedAt(string $createdAt): static
     {
         $this->createdAt = $createdAt;
 
