@@ -10,13 +10,13 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class PdfController extends AbstractController
 {
-    #[Route('/pdf', name: 'app_pdf')]
+    #[Route('/html-to-pdf', name: 'app_pdf')]
     public function index(HttpClientInterface $client, ParameterBagInterface $param): Response
     {
         $microservice_url = $param->get('microservice_url');
         $response = $client->request(
             'POST',
-            $microservice_url . '/pdf'
+            $microservice_url . '/html-to-pdf'
         );
         $content = $response->getContent();
         dump($content);
