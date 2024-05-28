@@ -19,6 +19,6 @@ class PdfController extends AbstractController
             $microservice_url . '/html-to-pdf'
         );
         $content = $response->getContent();
-        dump($content);
+        return new Response($content, "200", ["Content-Type" => "application/pdf"]);
     }
 }
