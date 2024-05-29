@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: maintenance" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: prod">
+      <change beforePath="$PROJECT_DIR$/pdfpal.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,8 +198,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "configurable.group.tools",
     "vue.rearranger.settings.migration": "true"
   },
@@ -283,7 +285,7 @@
       <workItem from="1716885285825" duration="4618000" />
       <workItem from="1716967992991" duration="28000" />
       <workItem from="1716968035412" duration="1387000" />
-      <workItem from="1716974308950" duration="494000" />
+      <workItem from="1716974308950" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -413,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716974746849</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="chore: prod">
+      <option name="closed" value="true" />
+      <created>1716974924523</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716974924523</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +457,7 @@
     <MESSAGE value="chore: updated composer packages" />
     <MESSAGE value="fixed: returned PdfController.php response" />
     <MESSAGE value="chore: maintenance" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: maintenance" />
+    <MESSAGE value="chore: prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: prod" />
   </component>
 </project>
