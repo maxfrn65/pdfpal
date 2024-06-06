@@ -10,7 +10,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class PdfController extends AbstractController
 {
-    #[Route('/html-to-pdf', name: 'html_to_pdf')]
+    #[Route('pdf/html-to-pdf', name: 'html_to_pdf')]
     public function index(HttpClientInterface $client, ParameterBagInterface $param): Response
     {
         return $this->render('pdf/htmltopdf.html.twig');
@@ -23,7 +23,7 @@ class PdfController extends AbstractController
         //return new Response($content, "200", ["Content-Type" => "application/pdf"]);
     }
 
-    #[Route('/url-to-pdf', name: 'url_to_pdf')]
+    #[Route('pdf/url-to-pdf', name: 'url_to_pdf')]
     public function urlToPdf(): Response
     {
         return $this->render('pdf/urltopdf.html.twig');
