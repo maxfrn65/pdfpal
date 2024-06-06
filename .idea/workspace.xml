@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
-      <change afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" afterDir="false" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat (wip): added PdfController.php + twig templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pdf/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +192,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Server Start.executor": "Run",
     "Shell Script.Symfony Server Start.executor": "Run",
-    "git-widget-placeholder": "feature/url-to-pdf",
+    "git-widget-placeholder": "feature/controllers",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf",
     "node.js.detected.package.eslint": "true",
@@ -295,7 +291,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="7316000" />
+      <workItem from="1717661869183" duration="8356000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -465,7 +461,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717664167609</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat (wip): added homepage links">
+      <option name="closed" value="true" />
+      <created>1717676989617</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717676989617</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat (wip): added PdfController.php + twig templates">
+      <option name="closed" value="true" />
+      <created>1717677215037</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717677215037</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,6 +515,8 @@
     <MESSAGE value="chore: added lucide icon library" />
     <MESSAGE value="feat: homepage w/o css" />
     <MESSAGE value="chore: workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
+    <MESSAGE value="feat (wip): added homepage links" />
+    <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat (wip): added PdfController.php + twig templates" />
   </component>
 </project>
