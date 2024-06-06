@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: prod">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdfpal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pdfpal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: homepage w/o css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +189,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Server Start.executor": "Run",
     "Shell Script.Symfony Server Start.executor": "Run",
-    "git-widget-placeholder": "feature/header",
+    "git-widget-placeholder": "feature/home",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates",
     "node.js.detected.package.eslint": "true",
@@ -301,7 +287,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="1356000" />
+      <workItem from="1717661869183" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -439,7 +425,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716974924523</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="chore: added lucide icon library">
+      <option name="closed" value="true" />
+      <created>1717663963485</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717663963485</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: homepage w/o css">
+      <option name="closed" value="true" />
+      <created>1717664045426</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717664045426</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: homepage w/o css">
+      <option name="closed" value="true" />
+      <created>1717664106390</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717664106390</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,6 +484,8 @@
     <MESSAGE value="fixed: returned PdfController.php response" />
     <MESSAGE value="chore: maintenance" />
     <MESSAGE value="chore: prod" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: prod" />
+    <MESSAGE value="chore: added lucide icon library" />
+    <MESSAGE value="feat: homepage w/o css" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: homepage w/o css" />
   </component>
 </project>
