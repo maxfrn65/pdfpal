@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat (wip): added PdfController.php + twig templates">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added url-to-pdf user only access control">
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/LoginControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +297,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="8356000" />
+      <workItem from="1717661869183" duration="10761000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -477,7 +483,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717677215037</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: added url-to-pdf user only access control">
+      <option name="closed" value="true" />
+      <created>1717677600483</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717677600483</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,6 +531,7 @@
     <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat (wip): added homepage links" />
     <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat (wip): added PdfController.php + twig templates" />
+    <MESSAGE value="feat: added url-to-pdf user only access control" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added url-to-pdf user only access control" />
   </component>
 </project>
