@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added url-to-pdf user only access control">
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/LoginControllerTest.php" afterDir="false" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +221,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/security" />
       <recent name="$PROJECT_DIR$/templates/parts" />
     </key>
   </component>
@@ -297,7 +293,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="10761000" />
+      <workItem from="1717661869183" duration="13116000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -491,7 +487,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717677600483</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: added nav bar">
+      <option name="closed" value="true" />
+      <created>1717680958664</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680958664</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: added login form">
+      <option name="closed" value="true" />
+      <created>1717680979439</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680979439</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: added registration form">
+      <option name="closed" value="true" />
+      <created>1717680987100</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680987100</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: first commit" />
     <MESSAGE value="feat: added entities" />
     <MESSAGE value="feat: deleted and added entities" />
     <MESSAGE value="feat: pushed to db" />
@@ -532,6 +551,9 @@
     <MESSAGE value="feat (wip): added homepage links" />
     <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
     <MESSAGE value="feat: added url-to-pdf user only access control" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added url-to-pdf user only access control" />
+    <MESSAGE value="feat: added nav bar" />
+    <MESSAGE value="feat: added login form" />
+    <MESSAGE value="feat: added registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added registration form" />
   </component>
 </project>
