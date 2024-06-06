@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: homepage w/o css" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added registration form">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,9 +193,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Server Start.executor": "Run",
     "Shell Script.Symfony Server Start.executor": "Run",
-    "git-widget-placeholder": "feature/home",
+    "git-widget-placeholder": "feature/controllers",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates",
+    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -212,10 +216,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/pdf" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/security" />
       <recent name="$PROJECT_DIR$/templates/parts" />
     </key>
   </component>
@@ -287,7 +293,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="1760000" />
+      <workItem from="1717661869183" duration="13116000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -449,7 +455,63 @@
       <option name="project" value="LOCAL" />
       <updated>1717664106390</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1717664167609</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717664167609</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat (wip): added homepage links">
+      <option name="closed" value="true" />
+      <created>1717676989617</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717676989617</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat (wip): added PdfController.php + twig templates">
+      <option name="closed" value="true" />
+      <created>1717677215037</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717677215037</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: added url-to-pdf user only access control">
+      <option name="closed" value="true" />
+      <created>1717677600483</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717677600483</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: added nav bar">
+      <option name="closed" value="true" />
+      <created>1717680958664</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680958664</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: added login form">
+      <option name="closed" value="true" />
+      <created>1717680979439</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680979439</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: added registration form">
+      <option name="closed" value="true" />
+      <created>1717680987100</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680987100</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: first commit" />
     <MESSAGE value="feat: added entities" />
     <MESSAGE value="feat: deleted and added entities" />
     <MESSAGE value="feat: pushed to db" />
@@ -486,6 +547,13 @@
     <MESSAGE value="chore: prod" />
     <MESSAGE value="chore: added lucide icon library" />
     <MESSAGE value="feat: homepage w/o css" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: homepage w/o css" />
+    <MESSAGE value="chore: workspace" />
+    <MESSAGE value="feat (wip): added homepage links" />
+    <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
+    <MESSAGE value="feat: added url-to-pdf user only access control" />
+    <MESSAGE value="feat: added nav bar" />
+    <MESSAGE value="feat: added login form" />
+    <MESSAGE value="feat: added registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added registration form" />
   </component>
 </project>
