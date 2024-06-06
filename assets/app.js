@@ -7,3 +7,8 @@
 import './styles/app.scss';
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+
+import { createIcons, icons } from 'lucide';
+
+// Caution, this will import all the icons and bundle them.
+createIcons({ icons });

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: prod">
-      <change beforePath="$PROJECT_DIR$/pdfpal.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: homepage w/o css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,19 +186,22 @@
   "keyToString": {
     "PHPUnit.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Server Start.executor": "Run",
-    "git-widget-placeholder": "master",
+    "Shell Script.Symfony Server Start.executor": "Run",
+    "git-widget-placeholder": "feature/home",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal",
+    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.watch.executor": "Run",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.tools",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -211,27 +212,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/parts" />
+    </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Server Start">
+  <component name="RunManager" selected="Shell Script.Symfony Server Start">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Server Start" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="symfony server:start" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="false" />
-      <option name="EXECUTE_SCRIPT_FILE" value="false" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="Symfony Server Start" type="ShConfigurationType">
@@ -249,9 +239,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="watch" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="npm.watch" />
       <item itemvalue="PHPUnit.Main" />
-      <item itemvalue="Shell Script.Server Start" />
       <item itemvalue="Shell Script.Symfony Server Start" />
     </list>
   </component>
@@ -286,6 +286,8 @@
       <workItem from="1716967992991" duration="28000" />
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
+      <workItem from="1717661793572" duration="60000" />
+      <workItem from="1717661869183" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -423,7 +425,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716974924523</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="chore: added lucide icon library">
+      <option name="closed" value="true" />
+      <created>1717663963485</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717663963485</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: homepage w/o css">
+      <option name="closed" value="true" />
+      <created>1717664045426</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717664045426</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: homepage w/o css">
+      <option name="closed" value="true" />
+      <created>1717664106390</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717664106390</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +484,8 @@
     <MESSAGE value="fixed: returned PdfController.php response" />
     <MESSAGE value="chore: maintenance" />
     <MESSAGE value="chore: prod" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: prod" />
+    <MESSAGE value="chore: added lucide icon library" />
+    <MESSAGE value="feat: homepage w/o css" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: homepage w/o css" />
   </component>
 </project>
