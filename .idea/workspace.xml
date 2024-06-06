@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added registration form">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="fixed: added SubscriptionController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +196,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Server Start.executor": "Run",
     "Shell Script.Symfony Server Start.executor": "Run",
-    "git-widget-placeholder": "feature/controllers",
+    "git-widget-placeholder": "feature/security",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf",
     "node.js.detected.package.eslint": "true",
@@ -293,7 +296,7 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="13116000" />
+      <workItem from="1717661869183" duration="17711000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -511,7 +514,47 @@
       <option name="project" value="LOCAL" />
       <updated>1717680987100</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed: functions route">
+      <option name="closed" value="true" />
+      <created>1717684269984</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684269984</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fixed: moved directory">
+      <option name="closed" value="true" />
+      <created>1717684297073</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684297073</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixed: moved registration template directory">
+      <option name="closed" value="true" />
+      <created>1717684332898</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684332898</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixed: added HistoryController">
+      <option name="closed" value="true" />
+      <created>1717684350534</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684350534</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed: added SubscriptionController">
+      <option name="closed" value="true" />
+      <created>1717684359149</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684359149</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,11 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: added entities" />
-    <MESSAGE value="feat: deleted and added entities" />
-    <MESSAGE value="feat: pushed to db" />
-    <MESSAGE value="fix: modified datetime format" />
-    <MESSAGE value="feat: db migrations" />
     <MESSAGE value="feat: pdf unit tests" />
     <MESSAGE value="feat: user unit tests" />
     <MESSAGE value="feat: subscription unit tests" />
@@ -554,6 +592,11 @@
     <MESSAGE value="feat: added nav bar" />
     <MESSAGE value="feat: added login form" />
     <MESSAGE value="feat: added registration form" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added registration form" />
+    <MESSAGE value="fixed: functions route" />
+    <MESSAGE value="fixed: moved directory" />
+    <MESSAGE value="fixed: moved registration template directory" />
+    <MESSAGE value="fixed: added HistoryController" />
+    <MESSAGE value="fixed: added SubscriptionController" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: added SubscriptionController" />
   </component>
 </project>
