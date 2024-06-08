@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added registration form">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,34 +184,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHPUnit.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script.Server Start.executor": "Run",
-    "Shell Script.Symfony Server Start.executor": "Run",
-    "git-widget-placeholder": "feature/controllers",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.watch.executor": "Run",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHPUnit.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/security&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.watch.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/pdf" />
@@ -293,7 +291,9 @@
       <workItem from="1716968035412" duration="1387000" />
       <workItem from="1716974308950" duration="699000" />
       <workItem from="1717661793572" duration="60000" />
-      <workItem from="1717661869183" duration="13116000" />
+      <workItem from="1717661869183" duration="18258000" />
+      <workItem from="1717764518501" duration="5432000" />
+      <workItem from="1717839817529" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -511,7 +511,103 @@
       <option name="project" value="LOCAL" />
       <updated>1717680987100</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed: functions route">
+      <option name="closed" value="true" />
+      <created>1717684269984</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684269984</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fixed: moved directory">
+      <option name="closed" value="true" />
+      <created>1717684297073</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684297073</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixed: moved registration template directory">
+      <option name="closed" value="true" />
+      <created>1717684332898</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684332898</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixed: added HistoryController">
+      <option name="closed" value="true" />
+      <created>1717684350534</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684350534</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed: added SubscriptionController">
+      <option name="closed" value="true" />
+      <created>1717684359149</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717684359149</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: updated register form">
+      <option name="closed" value="true" />
+      <created>1717704796911</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717704796911</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fixed: hide login form when the user is connected">
+      <option name="closed" value="true" />
+      <created>1717704839484</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717704839484</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fixed: pdf access control">
+      <option name="closed" value="true" />
+      <created>1717704861136</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1717704861136</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fixed: removed back button on login page">
+      <option name="closed" value="true" />
+      <created>1717764615860</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1717764615860</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fixed: removed back button on login page">
+      <option name="closed" value="true" />
+      <created>1717765838963</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1717765838963</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fixed: phpunit.xml.dist lines causing warning errors">
+      <option name="closed" value="true" />
+      <created>1717765926705</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1717765926705</updated>
+    </task>
+    <task id="LOCAL-00039" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1717839836478</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1717839836478</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,16 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: added entities" />
-    <MESSAGE value="feat: deleted and added entities" />
-    <MESSAGE value="feat: pushed to db" />
-    <MESSAGE value="fix: modified datetime format" />
-    <MESSAGE value="feat: db migrations" />
-    <MESSAGE value="feat: pdf unit tests" />
-    <MESSAGE value="feat: user unit tests" />
-    <MESSAGE value="feat: subscription unit tests" />
-    <MESSAGE value="chore: composer update" />
-    <MESSAGE value="feat: PdfController" />
     <MESSAGE value="fixed: removed $file" />
     <MESSAGE value="fixed: changed PdfController.php route" />
     <MESSAGE value="chore: updated composer packages" />
@@ -547,13 +633,23 @@
     <MESSAGE value="chore: prod" />
     <MESSAGE value="chore: added lucide icon library" />
     <MESSAGE value="feat: homepage w/o css" />
-    <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat (wip): added homepage links" />
     <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
     <MESSAGE value="feat: added url-to-pdf user only access control" />
     <MESSAGE value="feat: added nav bar" />
     <MESSAGE value="feat: added login form" />
     <MESSAGE value="feat: added registration form" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added registration form" />
+    <MESSAGE value="fixed: functions route" />
+    <MESSAGE value="fixed: moved directory" />
+    <MESSAGE value="fixed: moved registration template directory" />
+    <MESSAGE value="fixed: added HistoryController" />
+    <MESSAGE value="fixed: added SubscriptionController" />
+    <MESSAGE value="feat: updated register form" />
+    <MESSAGE value="fixed: hide login form when the user is connected" />
+    <MESSAGE value="fixed: pdf access control" />
+    <MESSAGE value="fixed: removed back button on login page" />
+    <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
+    <MESSAGE value="chore: workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
   </component>
 </project>
