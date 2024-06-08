@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="fixed: phpunit.xml.dist lines causing warning errors">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,6 +293,7 @@
       <workItem from="1717661793572" duration="60000" />
       <workItem from="1717661869183" duration="18258000" />
       <workItem from="1717764518501" duration="5432000" />
+      <workItem from="1717839817529" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -598,7 +599,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717765926705</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1717839836478</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1717839836478</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +633,6 @@
     <MESSAGE value="chore: prod" />
     <MESSAGE value="chore: added lucide icon library" />
     <MESSAGE value="feat: homepage w/o css" />
-    <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat (wip): added homepage links" />
     <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
     <MESSAGE value="feat: added url-to-pdf user only access control" />
@@ -641,6 +649,7 @@
     <MESSAGE value="fixed: pdf access control" />
     <MESSAGE value="fixed: removed back button on login page" />
     <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: phpunit.xml.dist lines causing warning errors" />
+    <MESSAGE value="chore: workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
   </component>
 </project>
