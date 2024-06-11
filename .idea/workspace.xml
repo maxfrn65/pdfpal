@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added subscriptions fixtures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SubscriptionFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SubscriptionFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/subscription/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscription/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/subscription/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" afterDir="false" />
     </list>
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,6 +180,8 @@
       <path value="$PROJECT_DIR$/vendor/phpmd/phpmd" />
       <path value="$PROJECT_DIR$/vendor/pdepend/pdepend" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -195,9 +199,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/security&quot;,
+    &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/subscription&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/templates/pdf&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -218,6 +223,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/templates/pdf" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
@@ -227,12 +233,12 @@
       <recent name="$PROJECT_DIR$/templates/parts" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Symfony Server Start">
+  <component name="RunManager" selected="Shell Script.symfony server:start">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
-    <configuration name="Symfony Server Start" type="ShConfigurationType">
+    <configuration name="symfony server:start" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="symfony server:start" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
@@ -260,13 +266,14 @@
     <list>
       <item itemvalue="npm.watch" />
       <item itemvalue="PHPUnit.Main" />
-      <item itemvalue="Shell Script.Symfony Server Start" />
+      <item itemvalue="Shell Script.symfony server:start" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
       </set>
     </attachedChunks>
   </component>
@@ -298,6 +305,7 @@
       <workItem from="1717661869183" duration="18258000" />
       <workItem from="1717764518501" duration="5432000" />
       <workItem from="1717839817529" duration="452000" />
+      <workItem from="1718093536786" duration="8596000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -611,7 +619,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717839836478</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1718091796912</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1718091796912</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat: added subscriptions fixtures">
+      <option name="closed" value="true" />
+      <created>1718095075744</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1718095075745</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed: removed $file" />
     <MESSAGE value="fixed: changed PdfController.php route" />
     <MESSAGE value="chore: updated composer packages" />
     <MESSAGE value="fixed: returned PdfController.php response" />
@@ -654,6 +677,7 @@
     <MESSAGE value="fixed: removed back button on login page" />
     <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
     <MESSAGE value="chore: workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
+    <MESSAGE value="feat: added subscriptions fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added subscriptions fixtures" />
   </component>
 </project>
