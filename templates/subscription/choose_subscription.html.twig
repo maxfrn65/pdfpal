@@ -1,0 +1,24 @@
+{# templates/subscription/choose_subscription.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Choose your subscription</h1>
+    <div class="subscriptions">
+        {% for subscription in subscriptions %}
+            <div class="subscription">
+                <h2>{{ subscription.title }}</h2>
+                <h3>{{ subscription.description }}</h3>
+                {% if subscription.price == 0 %}
+                    <p>Free</p>
+                {% else %}
+                    <p>{{ subscription.price }}€ per months</p>
+                {% endif %}
+                <form method="post" action="{{ path('app_choose_subscription', {'userId': app.user.id}) }}">
+                    <input type="hidden" name="subscription_id" value="{{ subscription.id }}">
+                    <button type="submit">Choose</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -15,7 +15,7 @@ class SubscriptionFormType extends AbstractType
         $builder
         ->add('subscription', EntityType::class, [
         'class' => Subscription::class,
-        'choice_label' => 'name',
+        'choice_label' => 'title',
         ]);
     }
 

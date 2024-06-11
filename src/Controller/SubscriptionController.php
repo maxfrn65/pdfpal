@@ -3,18 +3,41 @@
 namespace App\Controller;
 
 use App\Entity\Subscription;
+use App\Entity\User;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class SubscriptionController extends AbstractController
 {
-    #[Route('/subscription', name: 'app_subscription')]
-    public function index(): Response
+    #[Route(path: "/choose-subscription/{userId}", name: "app_choose_subscription")]
+    public function chooseSubscription(int $userId, Request $request, EntityManagerInterface $entityManager): Response
     {
-        $subscription = New Subscription();
-        return $this->render('subscription/index.html.twig', [
-            'controller_name' => 'SubscriptionController',
+        $user = $entityManager->getRepository(User::class)->find($userId);
+
+        if (!$user) {
+            throw $this->createNotFoundException('No user found for id ' . $userId);
+        }
+
+        if ($request->isMethod('POST')) {
+            $subscriptionId = $request->request->get('subscription_id');
+            $subscription = $entityManager->getRepository(Subscription::class)->find($subscriptionId);
+
+            if ($subscription) {
+                $user->setSubscription($subscription);
+                $entityManager->flush();
+
+            // Redirect to a success page or login
+                return $this->redirectToRoute('app_home');
+            }
+        }
+
+        $subscriptions = $entityManager->getRepository(Subscription::class)->findAll();
+
+        return $this->render('subscription/choose_subscription.html.twig', [
+        'subscriptions' => $subscriptions,
         ]);
     }
 }
