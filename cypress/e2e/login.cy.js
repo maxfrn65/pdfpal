@@ -1,24 +1,24 @@
 describe('Formulaire de Connexion', () => {
     it('test 1 - connexion OK', () => {
-        cy.visit('YOU_LOCAL/login');
+        cy.visit('https://127.0.0.1:8000/login');
 
         // Entrer le nom d'utilisateur et le mot de passe
-        cy.get('#username').type('YOUR_USERNAME');
-        cy.get('#password').type('YOUR_PASSWORD');
+        cy.get('#username').type('maxime@gmail.com');
+        cy.get('#password').type('123456');
 
         // Soumettre le formulaire
         cy.get('button[type="submit"]').click();
 
         // Vérifier que l'utilisateur est connecté
-        cy.contains('You are logged in as YOUR_USERNAME').should('exist');
+        cy.contains('You are logged in as maxime@gmail.com').should('exist');
     });
 
     it('test 2 - connexion KO', () => {
-        cy.visit('YOUR_LOCAL/login');
+        cy.visit('https://127.0.0.1:8000/login');
 
         // Entrer un nom d'utilisateur et un mot de passe incorrects
-        cy.get('#username').type('YOUR_USERNAME');
-        cy.get('#password').type('WRONG_PASSWORD');
+        cy.get('#username').type('maxime@gmail.com');
+        cy.get('#password').type('hgfghjkl');
 
         // Soumettre le formulaire
         cy.get('button[type="submit"]').click();
