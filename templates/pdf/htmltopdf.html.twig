@@ -3,5 +3,14 @@
 {% block title %}HTML to PDF Converter - PDFpal{% endblock %}
 
 {% block body %}
+    {{ include('parts/header.html.twig') }}
     <h1>Convert any HTML to PDF!</h1>
+        {% if user.subscription == null %}
+            <p>You need to <a href="{{ path('app_choose_subscription', {userId: userId}) }}">choose a subscription first</a></p>
+        {% else %}
+            <form method="post" action="{{ path('html_to_pdf') }}">
+                <input type="file" name="htmlFile">
+                <input type="submit">
+            </form>
+        {% endif %}
 {% endblock %}

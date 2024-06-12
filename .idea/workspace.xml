@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added subscriptions fixtures">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added subscription conditions to pdf forms">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SubscriptionFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SubscriptionFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pdf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/subscription/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +204,7 @@
     &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/subscription&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/pdfs-form&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -305,7 +309,8 @@
       <workItem from="1717661869183" duration="18258000" />
       <workItem from="1717764518501" duration="5432000" />
       <workItem from="1717839817529" duration="452000" />
-      <workItem from="1718093536786" duration="8596000" />
+      <workItem from="1718093536786" duration="23209000" />
+      <workItem from="1718179983617" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -635,7 +640,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718095075745</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="feat: added subscriptions form">
+      <option name="closed" value="true" />
+      <created>1718113172585</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1718113172585</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +666,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed: changed PdfController.php route" />
     <MESSAGE value="chore: updated composer packages" />
     <MESSAGE value="fixed: returned PdfController.php response" />
     <MESSAGE value="chore: maintenance" />
@@ -678,6 +690,7 @@
     <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
     <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat: added subscriptions fixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added subscriptions fixtures" />
+    <MESSAGE value="feat: added subscriptions form" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added subscriptions form" />
   </component>
 </project>

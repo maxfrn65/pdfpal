@@ -4,6 +4,11 @@
 
 {% block body %}
     {{ include('parts/header.html.twig') }}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
     <h1>Welcome to PDFpal!</h1>
     <h2>Your PDF conversion companion.</h2>
     <div>

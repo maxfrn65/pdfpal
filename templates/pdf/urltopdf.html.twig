@@ -3,5 +3,10 @@
 {% block title %}URL to PDF Converter - PDFpal{% endblock %}
 
 {% block body %}
+    {{ include('parts/header.html.twig') }}
     <h1>Convert any URL to PDF!</h1>
+    {{ form_start(urlForm) }}
+        {{ form_row(urlForm.url) }}
+        <button type="submit">Submit</button>
+    {{ form_end(urlForm) }}
 {% endblock %}

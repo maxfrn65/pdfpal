@@ -28,6 +28,7 @@ class SubscriptionController extends AbstractController
             if ($subscription) {
                 $user->setSubscription($subscription);
                 $entityManager->flush();
+                $this->addFlash('success', 'Your plan has been changed successfully.');
 
             // Redirect to a success page or login
                 return $this->redirectToRoute('app_home');
