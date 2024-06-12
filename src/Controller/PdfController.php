@@ -33,9 +33,9 @@ class PdfController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $file = $form['file']->getData();
             $htmlPdf->setTitle($file->getClientOriginalName());
-            $file->move('./', 'index.html');
+            $file->move('./', 'pdf.html');
 
-            $fp = fopen('index.html', 'r');
+            $fp = fopen('pdf.html', 'r');
             $htmlPdf->setUser($this->getUser());
             $htmlPdf->setCreatedAt(date('d/m/Y'));
 
