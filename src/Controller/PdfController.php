@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Pdf;
 use App\Entity\User;
+use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -16,30 +17,57 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 class PdfController extends AbstractController
 {
     #[Route('pdf/html-to-pdf', name: 'html_to_pdf')]
-    public function index(EntityManagerInterface $entityManager, Request $request): Response
+    public function index(HttpClientInterface $client, Request $request, EntityManagerInterface $manager): Response
     {
         $userId = $this->getUser()->getId();
-        $user = $entityManager->getRepository(User::class)->find($userId);
+        $user = $manager->getRepository(User::class)->find($userId);
 
+        $htmlPdf = new Pdf();
+
+        $form = $this->createFormBuilder($htmlPdf)
+            ->add('file', FileType::class)
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $file = $form['file']->getData();
+            $htmlPdf->setTitle($file->getClientOriginalName());
+            $file->move('./', 'index.html');
+
+            $fp = fopen('index.html', 'r');
+            $htmlPdf->setUser($this->getUser());
+            $htmlPdf->setCreatedAt(date('d/m/Y'));
+
+            $manager->persist($htmlPdf);
+            $manager->flush();
+
+            $response = $client->request('POST', $_ENV['MICROSERVICE_URL'] . '/html-to-pdf', [
+                'headers' => [
+                    'Content-Type' => 'multipart/form-data'
+                ],
+                'body' => [
+                    'file' => $fp
+                ]
+            ]);
+            $content = $response->getContent();
+            return new Response($content, 200, ['Content-Type' => 'application/pdf']);
+        }
         return $this->render('pdf/htmltopdf.html.twig', [
-            'user' => $user,
-            'userId' => $userId,
+            'htmlForm' => $form,
+            'user' => $user
         ]);
-        //$microservice_url = $param->get('microservice_url');
-        //$response = $client->request(
-            //'POST',
-            //$microservice_url . '/html-to-pdf'
-        //);
-        //$content = $response->getContent();
-        //return new Response($content, "200", ["Content-Type" => "application/pdf"]);
     }
 
     #[Route('pdf/url-to-pdf', name: 'url_to_pdf')]
     public function urlToPdf(Request $request, HttpClientInterface $client, EntityManagerInterface $manager): Response
     {
-        $pdf = new Pdf();
+        $userId = $this->getUser()->getId();
+        $user = $manager->getRepository(User::class)->find($userId);
 
-        $form = $this->createFormBuilder($pdf)
+        $urlPdf = new Pdf();
+
+        $form = $this->createFormBuilder($urlPdf)
             ->add('url', UrlType::class)
             ->getForm();
 
@@ -47,11 +75,11 @@ class PdfController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $url = $form->get('url')->getViewData();
-            $pdf->setUser($this->getUser());
-            $pdf->setTitle($url);
-            $pdf->setCreatedAt(date('d/m/Y'));
+            $urlPdf->setUser($this->getUser());
+            $urlPdf->setTitle($url);
+            $urlPdf->setCreatedAt(date('d/m/Y'));
 
-            $manager->persist($pdf);
+            $manager->persist($urlPdf);
             $manager->flush();
 
             $response = $client->request('POST', $_ENV['MICROSERVICE_URL'] . '/url-to-pdf', [
@@ -63,7 +91,8 @@ class PdfController extends AbstractController
             return new Response($content, 200, ['Content-Type' => 'application/pdf']);
         }
         return $this->render('pdf/urltopdf.html.twig', [
-            'urlForm' => $form
+            'urlForm' => $form,
+            'user' => $user
         ]);
     }
 }

@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added subscription conditions to pdf forms">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="fixed: added blank target to submit button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SubscriptionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +304,9 @@
       <workItem from="1717764518501" duration="5432000" />
       <workItem from="1717839817529" duration="452000" />
       <workItem from="1718093536786" duration="23209000" />
-      <workItem from="1718179983617" duration="312000" />
+      <workItem from="1718179983617" duration="631000" />
+      <workItem from="1718180720692" duration="47000" />
+      <workItem from="1718180937727" duration="5563000" />
     </task>
     <task id="LOCAL-00001" summary="chore: first commit">
       <option name="closed" value="true" />
@@ -648,7 +644,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718113172585</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat: added url to pdf form">
+      <option name="closed" value="true" />
+      <created>1718180429403</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1718180429403</updated>
+    </task>
+    <task id="LOCAL-00044" summary="fixed: added blank target to submit button">
+      <option name="closed" value="true" />
+      <created>1718180565015</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1718180565015</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,8 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: updated composer packages" />
-    <MESSAGE value="fixed: returned PdfController.php response" />
     <MESSAGE value="chore: maintenance" />
     <MESSAGE value="chore: prod" />
     <MESSAGE value="chore: added lucide icon library" />
@@ -691,6 +701,8 @@
     <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat: added subscriptions fixtures" />
     <MESSAGE value="feat: added subscriptions form" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added subscriptions form" />
+    <MESSAGE value="feat: added url to pdf form" />
+    <MESSAGE value="fixed: added blank target to submit button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: added blank target to submit button" />
   </component>
 </project>
