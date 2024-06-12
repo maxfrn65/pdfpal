@@ -12,7 +12,16 @@
         {% if app.user %}
             <div class="mb-3">
                 You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
-                <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Change subscription</a>
+                {% if userSubId == null %}
+                    <p>You are not subscribed to any plan, please choose one to start using our tool.</p>
+                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Choose a plan</a>
+                {% elseif userSubId == 1 %}
+                    <p>You are currently using the free plan.</p>
+                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Upgrade your plan</a>
+                {% else %}
+                    <p>You are currently using the premium plan.</p>
+                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Change your plan</a>
+                {% endif %}
             </div>
             {% else %}
                 <h1 class="h3 mb-3 font-weight-normal">Sign in to your account</h1>

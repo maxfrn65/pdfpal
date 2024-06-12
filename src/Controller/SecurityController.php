@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\SubscriptionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -14,6 +15,7 @@ class SecurityController extends AbstractController
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
         $userId = $this->getUser()->getId();
+        $userSubscriptionId = $this->getUser()->getSubscription()->getId();
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
 
@@ -23,7 +25,8 @@ class SecurityController extends AbstractController
         return $this->render('security/login.html.twig', [
             'last_username' => $lastUsername,
             'error' => $error,
-            'userId' => $userId
+            'userId' => $userId,
+            'userSubId' => $userSubscriptionId
         ]);
     }
 

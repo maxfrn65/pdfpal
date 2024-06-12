@@ -5,7 +5,6 @@
 {% block body %}
     {{ include('parts/header.html.twig') }}
     <h1>Register</h1>
-    {{ form_errors(registrationForm) }}
 
     {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.firstname) }}
@@ -16,5 +15,6 @@
         }) }}
         {{ form_row(registrationForm.agreeTerms) }}
         <button type="submit" class="btn">Register</button>
+        {{ form_errors(registrationForm) }}
     {{ form_end(registrationForm) }}
 {% endblock %}
