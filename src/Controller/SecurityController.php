@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\SubscriptionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -12,10 +13,14 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class SecurityController extends AbstractController
 {
     #[Route(path: '/login', name: 'app_login')]
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    public function login(AuthenticationUtils $authenticationUtils, Security $security): Response
     {
-        $userId = $this->getUser()->getId();
-        $userSubscriptionId = $this->getUser()->getSubscription()->getId();
+        $userId = null;
+        $userSubscriptionId = null;
+        if ($this->getUser()) {
+            $userId = $this->getUser()->getId();
+            $userSubscriptionId = $this->getUser()->getSubscription()->getId();
+        }
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
 
