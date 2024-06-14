@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added assets" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +201,7 @@
     &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/css&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -342,15 +344,7 @@
       <workItem from="1718273822652" duration="1197000" />
       <workItem from="1718289009002" duration="1989000" />
       <workItem from="1718378169376" duration="608000" />
-      <workItem from="1718378953980" duration="289000" />
-    </task>
-    <task id="LOCAL-00010" summary="chore: composer update">
-      <option name="closed" value="true" />
-      <created>1716277911163</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1716277911163</updated>
+      <workItem from="1718378953980" duration="708000" />
     </task>
     <task id="LOCAL-00011" summary="feat: PdfController">
       <option name="closed" value="true" />
@@ -736,7 +730,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718379240290</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1718379257933</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379257933</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,7 +762,6 @@
     <MESSAGE value="fixed: pdf access control" />
     <MESSAGE value="fixed: removed back button on login page" />
     <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
-    <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat: added subscriptions fixtures" />
     <MESSAGE value="feat: added subscriptions form" />
     <MESSAGE value="feat: added url to pdf form" />
@@ -779,6 +780,7 @@
     <MESSAGE value="feat: added pdfs history to login view" />
     <MESSAGE value="feat: finishing login css" />
     <MESSAGE value="feat: added assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added assets" />
+    <MESSAGE value="chore: workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
   </component>
 </project>
