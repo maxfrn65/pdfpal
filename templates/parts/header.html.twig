@@ -1,3 +1,24 @@
-<header>
-    <a href="{{ path('app_login') }}"><i data-lucide="circle-user-round"></i></a>
+<header class="navbar bg-base-100 px-48 py-0 pt-3">
+    <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="{{ path('app_home') }}">PDFPal</a>
+    </div>
+    <nav class="menu menu-horizontal px-1 gap-3">
+        {% if app.user %}
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn rounded-full"><div class="flex items-center gap-3"><i data-lucide="circle-user-round"></i><p>{{ app.user.firstname }} {{ app.user.lastname }}</p></div></div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="{{ path('app_login') }}">Profile</a></li>
+                    <li><a class="text-error" href="{{ path('app_logout') }}">Log out</a></li>
+                </ul>
+            </div>
+        {% else %}
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-circle"><i data-lucide="circle-user-round"></i></div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="{{ path('app_login') }}">Log in</a></li>
+                    <li><a href="{{ path('app_register') }}">Sign up</a></li>
+                </ul>
+            </div>
+        {% endif %}
+    </nav>
 </header>
