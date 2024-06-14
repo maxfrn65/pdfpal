@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="fixed: added blank target to submit button">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: tailwind setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfpal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pdfpal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HistoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/history/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parts/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +29,17 @@
       <executable path="composer" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,7 +212,7 @@
     &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/pdfs-form&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/css&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -231,7 +245,11 @@
       <recent name="$PROJECT_DIR$/templates/parts" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.symfony server:start">
+  <component name="RunManager" selected="npm.watch">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
@@ -248,6 +266,31 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="EXECUTE_IN_TERMINAL" value="false" />
       <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="symfony server:start" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="symfony server:start" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="false" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -307,14 +350,11 @@
       <workItem from="1718179983617" duration="631000" />
       <workItem from="1718180720692" duration="47000" />
       <workItem from="1718180937727" duration="5563000" />
-    </task>
-    <task id="LOCAL-00001" summary="chore: first commit">
-      <option name="closed" value="true" />
-      <created>1713342259361</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1713342259361</updated>
+      <workItem from="1718202485872" duration="5775000" />
+      <workItem from="1718261776851" duration="9796000" />
+      <workItem from="1718273822652" duration="1197000" />
+      <workItem from="1718289009002" duration="1989000" />
+      <workItem from="1718378169376" duration="608000" />
     </task>
     <task id="LOCAL-00002" summary="feat: added entities">
       <option name="closed" value="true" />
@@ -660,7 +700,55 @@
       <option name="project" value="LOCAL" />
       <updated>1718180565015</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fixed: added html to pdf form">
+      <option name="closed" value="true" />
+      <created>1718204139392</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1718204139392</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fixed: changed file name">
+      <option name="closed" value="true" />
+      <created>1718205548130</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1718205548130</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat: cypress login test">
+      <option name="closed" value="true" />
+      <created>1718205601871</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1718205601871</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fixed: get user info if connected">
+      <option name="closed" value="true" />
+      <created>1718206696838</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1718206696838</updated>
+    </task>
+    <task id="LOCAL-00049" summary="chore: cypress setup">
+      <option name="closed" value="true" />
+      <created>1718206709566</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1718206709566</updated>
+    </task>
+    <task id="LOCAL-00050" summary="chore: tailwind setup">
+      <option name="closed" value="true" />
+      <created>1718207962073</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1718207962074</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,12 +766,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: maintenance" />
-    <MESSAGE value="chore: prod" />
-    <MESSAGE value="chore: added lucide icon library" />
-    <MESSAGE value="feat: homepage w/o css" />
-    <MESSAGE value="feat (wip): added homepage links" />
-    <MESSAGE value="feat (wip): added PdfController.php + twig templates" />
     <MESSAGE value="feat: added url-to-pdf user only access control" />
     <MESSAGE value="feat: added nav bar" />
     <MESSAGE value="feat: added login form" />
@@ -703,6 +785,12 @@
     <MESSAGE value="feat: added subscriptions form" />
     <MESSAGE value="feat: added url to pdf form" />
     <MESSAGE value="fixed: added blank target to submit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: added blank target to submit button" />
+    <MESSAGE value="fixed: added html to pdf form" />
+    <MESSAGE value="fixed: changed file name" />
+    <MESSAGE value="feat: cypress login test" />
+    <MESSAGE value="fixed: get user info if connected" />
+    <MESSAGE value="chore: cypress setup" />
+    <MESSAGE value="chore: tailwind setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: tailwind setup" />
   </component>
 </project>
