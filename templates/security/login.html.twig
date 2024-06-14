@@ -4,51 +4,104 @@
 
 {% block body %}
     {{ include('/parts/header.html.twig') }}
-    <form method="post">
-        {% if error %}
-            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-        {% endif %}
-
         {% if app.user %}
-            <div class="mb-3">
-                You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
-                {% if userSubId == null %}
-                    <p>You are not subscribed to any plan, please choose one to start using our tool.</p>
-                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Choose a plan</a>
-                {% elseif userSubId == 1 %}
-                    <p>You are currently using the free plan.</p>
-                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Upgrade your plan</a>
-                {% else %}
-                    <p>You are currently using the premium plan.</p>
-                    <a href="{{ path('app_choose_subscription', {userId: userId}) }}">Change your plan</a>
-                {% endif %}
-            </div>
-            {% else %}
-                <h1 class="h3 mb-3 font-weight-normal">Sign in to your account</h1>
-                <label for="username">Email</label>
-                <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
-                <label for="password">Password</label>
-                <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password" required>
-
-                <input type="hidden" name="_csrf_token"
-                       value="{{ csrf_token('authenticate') }}"
-                >
-
-                {#
-                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-                See https://symfony.com/doc/current/security/remember_me.html
-
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" name="_remember_me"> Remember me
-                    </label>
+            <section class="flex flex-col px-48 py-10 gap-5">
+                <h1 class="text-3xl font-bold">Welcome {{ app.user.firstname }} {{ app.user.Lastname }}</h1>
+                <div class="flex gap-5">
+                    <div class="card w-96 bg-base-100 border-black-50 border-[1px]">
+                        <div class="card-body flex flex-col gap-5">
+                            <h2 class="card-title">Plan</h2>
+                            {% if userSubId == null %}
+                                <p>You are not subscribed to any plan, please choose one to start using our tool.</p>
+                                <a class="btn btn-neutral" href="{{ path('app_choose_subscription', {userId: userId}) }}">Choose a plan</a>
+                            {% elseif userSubId == 1 %}
+                                <p>You are currently using the free plan.</p>
+                                <a class="btn btn-neutral" href="{{ path('app_choose_subscription', {userId: userId}) }}">Upgrade your plan</a>
+                            {% else %}
+                                <p>You are currently using the premium plan.</p>
+                                <a class="btn btn-neutral" href="{{ path('app_choose_subscription', {userId: userId}) }}">Change your plan</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 border-black-50 border-[1px]">
+                        <div class="card-body flex flex-col gap-5">
+                            <h2 class="card-title">Account</h2>
+                            <p>You are logged in as {{ app.user.userIdentifier }}</p>
+                            <a class="btn btn-error text-white" href="{{ path('app_logout') }}">Log out</a>
+                        </div>
+                    </div>
                 </div>
-                #}
+                <div class="divider"></div>
+                <h1 class="text-3xl font-bold">History</h1>
+                <div class="overflow-x-auto">
+                    <table class="table">
+                        <!-- head -->
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Created at</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for pdf in pdfs %}
+                        <tr>
+                            <th>1</th>
+                            <td>{{ pdf.title }}</td>
+                            <td>{{ pdf.createdAt }}</td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <th>2</th>
+                            <td>Hart Hagerty</td>
+                            <td>Desktop Support Technician</td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <th>3</th>
+                            <td>Brice Swyre</td>
+                            <td>Tax Accountant</td>
+                            <td>Red</td>
+                        </tr>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            </section>
+        {% else %}
+            <section class="flex">
+                <div class="w-[50vw] h-[86vh] flex justify-center items-center">
+                    <form method="post" class="flex flex-col gap-10 w-[50%]">
+                        {% if error %}
+                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                        {% endif %}
 
-                <button class="btn btn-lg btn-primary" type="submit">
-                    Sign in
-                </button>
-                <a href="{{ path('app_register') }}">No account? Create yours.</a>
+                        <h1 class="text-6xl font-black">Sign in</h1>
+                        <div class="flex flex-col gap-3">
+                            <div>
+                                <label for="username">Email</label>
+                                <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control input input-bordered w-full" autocomplete="email" required autofocus>
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="_password" id="password" class="form-control input input-bordered w-full" autocomplete="current-password" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                        <div class="flex flex-col gap-3">
+                            <button class="btn btn-block btn-neutral" type="submit">
+                                Sign in
+                            </button>
+                            <a href="{{ path('app_register') }}" class="link">No account? Create yours.</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex flex-col justify-center items-center w-[50vw] h-[86vh] m-3 rounded-3xl bg-gradient-to-t from-blue-600 via-violet-700 to-fuchsia-800">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="" alt="Convert any file format">
+                        <h1 class="text-3xl font-bold text-white">Convert from URL or HTML to PDF!</h1>
+                    </div>
+                </div>
+            </section>
         {% endif %}
-    </form>
 {% endblock %}
