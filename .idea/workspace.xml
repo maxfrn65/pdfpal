@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: tailwind setup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdfpal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pdfpal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HistoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/history/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parts/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: added assets" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -355,70 +342,7 @@
       <workItem from="1718273822652" duration="1197000" />
       <workItem from="1718289009002" duration="1989000" />
       <workItem from="1718378169376" duration="608000" />
-    </task>
-    <task id="LOCAL-00002" summary="feat: added entities">
-      <option name="closed" value="true" />
-      <created>1713346611577</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713346611577</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: deleted and added entities">
-      <option name="closed" value="true" />
-      <created>1713356826922</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713356826922</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: pushed to db">
-      <option name="closed" value="true" />
-      <created>1713356878919</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713356878919</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fix: modified datetime format">
-      <option name="closed" value="true" />
-      <created>1714843195921</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1714843195921</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: db migrations">
-      <option name="closed" value="true" />
-      <created>1714843213954</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1714843213954</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: pdf unit tests">
-      <option name="closed" value="true" />
-      <created>1714843225570</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1714843225570</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: user unit tests">
-      <option name="closed" value="true" />
-      <created>1714843234091</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1714843234091</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: subscription unit tests">
-      <option name="closed" value="true" />
-      <created>1714844027449</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1714844027449</updated>
+      <workItem from="1718378953980" duration="289000" />
     </task>
     <task id="LOCAL-00010" summary="chore: composer update">
       <option name="closed" value="true" />
@@ -748,7 +672,71 @@
       <option name="project" value="LOCAL" />
       <updated>1718207962074</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fixed: deleted history mvc">
+      <option name="closed" value="true" />
+      <created>1718379045891</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379045891</updated>
+    </task>
+    <task id="LOCAL-00052" summary="chore: daisyui setup">
+      <option name="closed" value="true" />
+      <created>1718379110421</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379110421</updated>
+    </task>
+    <task id="LOCAL-00053" summary="chore: watcher">
+      <option name="closed" value="true" />
+      <created>1718379118828</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379118828</updated>
+    </task>
+    <task id="LOCAL-00054" summary="feat: finishing header">
+      <option name="closed" value="true" />
+      <created>1718379144865</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379144865</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat: finishing home css">
+      <option name="closed" value="true" />
+      <created>1718379156918</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379156918</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat: added pdfs history to login view">
+      <option name="closed" value="true" />
+      <created>1718379184367</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379184367</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat: finishing login css">
+      <option name="closed" value="true" />
+      <created>1718379232088</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379232088</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat: added assets">
+      <option name="closed" value="true" />
+      <created>1718379240290</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1718379240290</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -766,14 +754,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: added url-to-pdf user only access control" />
-    <MESSAGE value="feat: added nav bar" />
-    <MESSAGE value="feat: added login form" />
-    <MESSAGE value="feat: added registration form" />
-    <MESSAGE value="fixed: functions route" />
-    <MESSAGE value="fixed: moved directory" />
-    <MESSAGE value="fixed: moved registration template directory" />
-    <MESSAGE value="fixed: added HistoryController" />
     <MESSAGE value="fixed: added SubscriptionController" />
     <MESSAGE value="feat: updated register form" />
     <MESSAGE value="fixed: hide login form when the user is connected" />
@@ -791,6 +771,14 @@
     <MESSAGE value="fixed: get user info if connected" />
     <MESSAGE value="chore: cypress setup" />
     <MESSAGE value="chore: tailwind setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: tailwind setup" />
+    <MESSAGE value="fixed: deleted history mvc" />
+    <MESSAGE value="chore: daisyui setup" />
+    <MESSAGE value="chore: watcher" />
+    <MESSAGE value="feat: finishing header" />
+    <MESSAGE value="feat: finishing home css" />
+    <MESSAGE value="feat: added pdfs history to login view" />
+    <MESSAGE value="feat: finishing login css" />
+    <MESSAGE value="feat: added assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added assets" />
   </component>
 </project>
