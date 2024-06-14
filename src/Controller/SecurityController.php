@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Pdf;
 use App\Repository\SubscriptionRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,13 +16,15 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class SecurityController extends AbstractController
 {
     #[Route(path: '/login', name: 'app_login')]
-    public function login(AuthenticationUtils $authenticationUtils, Security $security): Response
+    public function login(AuthenticationUtils $authenticationUtils, Security $security, EntityManagerInterface $entityManager): Response
     {
         $userId = null;
         $userSubscriptionId = null;
+        $pdfs = null;
         if ($this->getUser()) {
             $userId = $this->getUser()->getId();
             $userSubscriptionId = $this->getUser()->getSubscription()->getId();
+            $pdfs = $entityManager->getRepository(Pdf::class)->find($userId);
         }
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
@@ -31,7 +36,8 @@ class SecurityController extends AbstractController
             'last_username' => $lastUsername,
             'error' => $error,
             'userId' => $userId,
-            'userSubId' => $userSubscriptionId
+            'userSubId' => $userSubscriptionId,
+            'pdfs' => $pdfs
         ]);
     }
 
