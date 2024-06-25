@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="feat: finished subscription page css">
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parts/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +207,7 @@
     &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/html-to-pdf-css&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -349,14 +355,11 @@
       <workItem from="1718626562597" duration="2199000" />
       <workItem from="1718730916060" duration="2874000" />
       <workItem from="1718781000404" duration="3542000" />
-    </task>
-    <task id="LOCAL-00014" summary="chore: updated composer packages">
-      <option name="closed" value="true" />
-      <created>1716892091638</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1716892091638</updated>
+      <workItem from="1718803579578" duration="8271000" />
+      <workItem from="1718812024757" duration="116000" />
+      <workItem from="1718812165077" duration="967000" />
+      <workItem from="1718912790877" duration="1397000" />
+      <workItem from="1719317131475" duration="305000" />
     </task>
     <task id="LOCAL-00015" summary="fixed: returned PdfController.php response">
       <option name="closed" value="true" />
@@ -742,7 +745,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718781135769</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1718803807050</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1718803807050</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,10 +792,10 @@
     <MESSAGE value="feat: added pdfs history to login view" />
     <MESSAGE value="feat: finishing login css" />
     <MESSAGE value="feat: added assets" />
-    <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat: added alert css" />
     <MESSAGE value="feat: finished sign up page css" />
     <MESSAGE value="feat: finished subscription page css" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: finished subscription page css" />
+    <MESSAGE value="chore: workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
   </component>
 </project>

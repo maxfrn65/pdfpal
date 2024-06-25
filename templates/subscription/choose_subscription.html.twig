@@ -5,7 +5,7 @@
 {% block body %}
     {{ include('parts/header.html.twig') }}
     <div class="flex flex-col px-48 py-10 gap-10">
-        <h1 class="text-6xl font-black">Choose your subscription</h1>
+        <h1 class="text-6xl font-bold">Choose your subscription</h1>
         <div class="flex gap-10">
             {% for subscription in subscriptions %}
                 <div class="border-[1px] rounded-2xl h-fit w-[20%] p-1 bg-gradient-to-t from-blue-600 via-violet-700 to-fuchsia-800">

@@ -25,7 +25,7 @@ class PdfController extends AbstractController
         $htmlPdf = new Pdf();
 
         $form = $this->createFormBuilder($htmlPdf)
-            ->add('file', FileType::class)
+            ->add('file', FileType::class, ['label' => false])
             ->getForm();
 
         $form->handleRequest($request);
