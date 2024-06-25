@@ -4,17 +4,47 @@
 
 {% block body %}
     {{ include('parts/header.html.twig') }}
-    <h1>Register</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.firstname) }}
-        {{ form_row(registrationForm.lastname) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-        <button type="submit" class="btn">Register</button>
-        {{ form_errors(registrationForm) }}
-    {{ form_end(registrationForm) }}
+    <section class="flex">
+        <div class="w-[50vw] h-[86vh] flex justify-center items-center flex-col gap-10">
+            {{ form_start(registrationForm, {'attr': {'class': 'flex flex-col gap-5 w-[50%]'}}) }}
+                <h1 class="text-6xl font-black">Register</h1>
+                <div>
+                    <div class="form-control w-full">
+                        {{ form_label(registrationForm.firstname, null, {'label_attr': {'class': 'label'}}) }}
+                        {{ form_widget(registrationForm.firstname, {'attr': {'class': 'input input-bordered w-full'}}) }}
+                        {{ form_errors(registrationForm.firstname, {'attr': {'class': 'text-red-500 text-xs mt-1'}}) }}
+                    </div>
+                    <div class="form-control w-full">
+                        {{ form_label(registrationForm.lastname, null, {'label_attr': {'class': 'label'}}) }}
+                        {{ form_widget(registrationForm.lastname, {'attr': {'class': 'input input-bordered w-full'}}) }}
+                        {{ form_errors(registrationForm.lastname, {'attr': {'class': 'text-red-500 text-xs mt-1'}}) }}
+                    </div>
+                    <div class="form-control w-full">
+                        {{ form_label(registrationForm.email, null, {'label_attr': {'class': 'label'}}) }}
+                        {{ form_widget(registrationForm.email, {'attr': {'class': 'input input-bordered w-full'}}) }}
+                        {{ form_errors(registrationForm.email, {'attr': {'class': 'text-red-500 text-xs mt-1'}}) }}
+                    </div>
+                    <div class="form-control w-full">
+                        {{ form_label(registrationForm.plainPassword, 'Password', {'label_attr': {'class': 'label'}}) }}
+                        {{ form_widget(registrationForm.plainPassword, {'attr': {'class': 'input input-bordered w-full'}}) }}
+                        {{ form_errors(registrationForm.plainPassword, {'attr': {'class': 'text-red-500 text-xs mt-1'}}) }}
+                    </div>
+                    <div class="form-control w-full flex flex-row items-center">
+                        {{ form_widget(registrationForm.agreeTerms, {'attr': {'class': 'checkbox checkbox-sm checkbox-neutral'}}) }}
+                        {{ form_label(registrationForm.agreeTerms, null, {'label_attr': {'class': 'label ml-2'}}) }}
+                        {{ form_errors(registrationForm.agreeTerms, {'attr': {'class': 'text-red-500 text-xs mt-1'}}) }}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-neutral btn-block">Register</button>
+                {{ form_errors(registrationForm) }}
+            {{ form_end(registrationForm) }}
+        </div>
+        <div class="flex flex-col justify-center items-center w-[50vw] h-[86vh] m-3 rounded-3xl bg-gradient-to-t from-blue-600 via-violet-700 to-fuchsia-800">
+            <div class="flex flex-col justify-center items-center gap-24">
+                <img src="{{ asset('imgs/login/monitor.png') }}" alt="Convert any file format">
+                <h1 class="text-4xl font-bold text-white">Convert from URL or HTML to PDF!</h1>
+            </div>
+        </div>
+    </section>
 {% endblock %}
