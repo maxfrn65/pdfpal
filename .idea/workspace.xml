@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pdf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PdfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parts/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parts/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/htmltopdf.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscription/choose_subscription.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: tailwind class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,35 +191,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;PHPUnit.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script.Server Start.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Symfony Server Start.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.symfony server:start.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/html-to-pdf-css&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.watch.executor&quot;: &quot;Run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "PHPUnit.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.Server Start.executor": "Run",
+    "Shell Script.Symfony Server Start.executor": "Run",
+    "Shell Script.symfony server:start.executor": "Run",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.watch.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -359,23 +351,7 @@
       <workItem from="1718812024757" duration="116000" />
       <workItem from="1718812165077" duration="967000" />
       <workItem from="1718912790877" duration="1397000" />
-      <workItem from="1719317131475" duration="305000" />
-    </task>
-    <task id="LOCAL-00015" summary="fixed: returned PdfController.php response">
-      <option name="closed" value="true" />
-      <created>1716892115299</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1716892115300</updated>
-    </task>
-    <task id="LOCAL-00016" summary="chore: maintenance">
-      <option name="closed" value="true" />
-      <created>1716974746849</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1716974746849</updated>
+      <workItem from="1719317131475" duration="608000" />
     </task>
     <task id="LOCAL-00017" summary="chore: prod">
       <option name="closed" value="true" />
@@ -753,7 +729,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718803807050</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="feat: finished html to pdf css">
+      <option name="closed" value="true" />
+      <created>1719317493715</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1719317493715</updated>
+    </task>
+    <task id="LOCAL-00065" summary="chore: tailwind class">
+      <option name="closed" value="true" />
+      <created>1719317636118</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1719317636118</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -764,15 +756,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed: pdf access control" />
-    <MESSAGE value="fixed: removed back button on login page" />
     <MESSAGE value="fixed: phpunit.xml.dist lines causing warning errors" />
     <MESSAGE value="feat: added subscriptions fixtures" />
     <MESSAGE value="feat: added subscriptions form" />
@@ -796,6 +798,8 @@
     <MESSAGE value="feat: finished sign up page css" />
     <MESSAGE value="feat: finished subscription page css" />
     <MESSAGE value="chore: workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
+    <MESSAGE value="feat: finished html to pdf css" />
+    <MESSAGE value="chore: tailwind class" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: tailwind class" />
   </component>
 </project>
