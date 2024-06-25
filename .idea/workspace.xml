@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: tailwind class" />
+    <list default="true" id="88674ea2-1831-4e58-a746-239137493caf" name="Changes" comment="chore: workspace">
+      <change beforePath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdf/urltopdf.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +201,7 @@
     "Shell Script.Server Start.executor": "Run",
     "Shell Script.Symfony Server Start.executor": "Run",
     "Shell Script.symfony server:start.executor": "Run",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/url-to-pdf-css",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/maxime/Code/symfony/www/cours/s6/pdfpal/src",
     "node.js.detected.package.eslint": "true",
@@ -351,15 +353,7 @@
       <workItem from="1718812024757" duration="116000" />
       <workItem from="1718812165077" duration="967000" />
       <workItem from="1718912790877" duration="1397000" />
-      <workItem from="1719317131475" duration="608000" />
-    </task>
-    <task id="LOCAL-00017" summary="chore: prod">
-      <option name="closed" value="true" />
-      <created>1716974924523</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1716974924523</updated>
+      <workItem from="1719317131475" duration="924000" />
     </task>
     <task id="LOCAL-00018" summary="chore: added lucide icon library">
       <option name="closed" value="true" />
@@ -745,7 +739,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719317636118</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="chore: workspace">
+      <option name="closed" value="true" />
+      <created>1719317787058</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1719317787058</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,9 +799,9 @@
     <MESSAGE value="feat: added alert css" />
     <MESSAGE value="feat: finished sign up page css" />
     <MESSAGE value="feat: finished subscription page css" />
-    <MESSAGE value="chore: workspace" />
     <MESSAGE value="feat: finished html to pdf css" />
     <MESSAGE value="chore: tailwind class" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: tailwind class" />
+    <MESSAGE value="chore: workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: workspace" />
   </component>
 </project>

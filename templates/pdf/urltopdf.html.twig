@@ -4,13 +4,17 @@
 
 {% block body %}
     {{ include('parts/header.html.twig') }}
-    <h1>Convert any URL to PDF!</h1>
-    {% if user.subscription == null %}
-        <p>You need to <a href="{{ path('app_choose_subscription', {userId: userId}) }}">choose a subscription first</a></p>
-    {% else %}
-        {{ form_start(urlForm) }}
-            {{ form_row(urlForm.url) }}
-            <button type="submit" formtarget="_blank">Submit</button>
-        {{ form_end(urlForm) }}
-    {% endif %}
+    <section class="flex flex-col items-center justify-center h-[89vh] gap-14">
+        <h1 class="text-6xl font-bold">Convert any URL to PDF!</h1>
+        {% if user.subscription == null %}
+            <p>You need to <a href="{{ path('app_choose_subscription', {userId: userId}) }}">choose a subscription first</a></p>
+        {% else %}
+            {{ form_start(urlForm) }}
+            <div class="flex items-end gap-14">
+                {{ form_row(urlForm.url, {'attr': {'class': 'input input-bordered w-full'}}) }}
+                <button type="submit" formtarget="_blank" class="btn btn-neutral">Submit</button>
+            </div>
+            {{ form_end(urlForm) }}
+        {% endif %}
+    </section>
 {% endblock %}
